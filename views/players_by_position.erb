@@ -1,0 +1,9 @@
+<h2><%= @position %>s</h2>
+
+<ul>
+<% @players.each do |player| %>
+  <% if player.position.to_s == @position %>
+    <li> <%=player.name %> : <a href="/teams/<%=player.team%>"> <%=player.team%> </a> </li>
+  <% end %>
+<% end %>
+</ul>

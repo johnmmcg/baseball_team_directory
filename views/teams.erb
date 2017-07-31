@@ -1,0 +1,13 @@
+<!-- testing -->
+<ul>
+<!-- # <% @team_data.keys.each do |team_name| %>
+#   <a href="/teams/<%= team_name %>">
+#     <li> The <%=team_name %> </li>
+#   </a>
+# <% end %> -->
+<% @teams.each do |team| %>
+  <a href="/teams/<%= team.name %>">
+    <li> <%=team.name %> </li>
+  </a>
+<% end %>
+</ul>

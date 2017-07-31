@@ -1,0 +1,7 @@
+<h2> Positions: </h2>
+
+<% @positions[0].each_key do |position| %>
+<a href="/positions/<%=position%>">
+<li> <%= position %> </li>
+</a>
+<% end %>

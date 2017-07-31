@@ -1,0 +1,13 @@
+<!-- # <% require 'pry' %>
+# <h3> The <%=@team_name %> </h3>
+#
+# <% Team.new(@team_name) %> -->
+
+<h1> The <%= @team.name %> </h1>
+<h2> Players: </h2>
+<% @players.each do |player| %>
+<li> <a href="/positions/<%=player.position%>"><%=player.position%> </a> : <%=player.name %> </li>
+<% end %>
+<!--
+</br>
+<a href='http://localhost:4567/'>Home</a> -->
